@@ -8,21 +8,29 @@ DeltoBot es un bot de Telegram diseñado para ofrecer una variedad de funcionali
 
 Consulta el clima actual en cualquier ciudad del mundo. Utilizando la API de OpenWeatherMap, el bot proporciona la temperatura actual, las condiciones meteorológicas y una recomendación basada en el clima.
 
-![saber el clima](https://github.com/lazaroborghi/telegrambot_delto_lb/tree/main/images/quierosaberelclima.png)
+![quiero saber el clima](https://github.com/user-attachments/assets/1f3f6203-bcc4-446f-bc0c-d0d47630d872)
 
 ¡Quiero contar!: 
 
 Cada vez que el usuario selecciona esta opción, el bot incrementa un contador específico para ese usuario. Este contador es persistente, manteniéndose incluso si el bot se reinicia.
+
+![quiero contar](https://github.com/user-attachments/assets/3e7b29bf-484e-4f48-bba0-70e6f412835d)
 
 Charlar con Delto: 
 
 Esta funcionalidad permite al usuario charlar interactivamente con Delto y luego enviar la conversación OpenAI para un análisis de sentimientos. 
 El bot clasifica el sentimiento como positivo, negativo o neutral, y proporciona una breve explicación.
 
+![hablar con delto](https://github.com/user-attachments/assets/13fc0bd0-900f-460e-bb97-14ecf24e4a71)
+![hablar con delto 2](https://github.com/user-attachments/assets/2b634f5d-9aba-4166-a651-d801d7295f64)
+
 Traducción de voz (funcionalidad libre):
 
 Esta funcionalidad permite al usuario elegir un idioma al cual traducir un mensaje. Luego, el usuario envía un audio al bot, que traduce el contenido al idioma seleccionado y responde con una nota de voz generada automáticamente por inteligencia artificial. Esta funcionalidad mejora la accesibilidad y ofrece una experiencia interactiva e innovadora.
 Esta funcionalidad es muy útil porque genera una nota de voz traducida al instante de lo que le envías. Un caso de uso interesante podría ser si necesitas comunicarte rápidamente con una persona que hable otro idioma, tan solo sería enviar una nota de voz y reproducir la traducción. Especialmente útil si estás como turista en otro país.
+
+![traductor 1](https://github.com/user-attachments/assets/f3827fe2-77c7-4c2f-b169-5165b1d3ad19)
+![traductor2](https://github.com/user-attachments/assets/b2b80203-f5b1-4e84-9729-5fd9969026d1)
 
 ### Probar DeltoBot
 
