@@ -14,8 +14,6 @@ Consulta el clima actual en cualquier ciudad del mundo. Utilizando la API de Ope
 
 Cada vez que el usuario selecciona esta opción, el bot incrementa un contador específico para ese usuario. Este contador es persistente, manteniéndose incluso si el bot se reinicia.
 
-![contar](https://github.com/lazaroborghi/telegrambot_delto_lb/blob/main/quierocontar.png?raw=true)
-
 Charlar con Delto: 
 
 Esta funcionalidad permite al usuario charlar interactivamente con Delto y luego enviar la conversación OpenAI para un análisis de sentimientos. 
