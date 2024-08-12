@@ -1,0 +1,6 @@
+pyrogram
+requests
+python-dotenv
+openai
+aiofiles
+aiohttp
