@@ -2,6 +2,8 @@
 
 DeltoBot es un bot de Telegram diseñado para ofrecer una variedad de funcionalidades útiles y entretenidas.
 
+### Enlace para probarlo: [Probar DeltoBot](https://t.me/delto_lb_bot)
+
 ### Funcionalidades
 
 ¡Quiero saber el clima!:
