@@ -8,11 +8,13 @@ DeltoBot es un bot de Telegram diseñado para ofrecer una variedad de funcionali
 
 Consulta el clima actual en cualquier ciudad del mundo. Utilizando la API de OpenWeatherMap, el bot proporciona la temperatura actual, las condiciones meteorológicas y una recomendación basada en el clima.
 
-![saber el clima](https://github.com/lazaroborghi/telegrambot_delto_lb/blob/main/quiero_saber_el_clima.png?raw=true)
+![saber el clima](https://github.com/lazaroborghi/telegrambot_delto_lb/images/quierosaberelclima.png)
 
 ¡Quiero contar!: 
 
 Cada vez que el usuario selecciona esta opción, el bot incrementa un contador específico para ese usuario. Este contador es persistente, manteniéndose incluso si el bot se reinicia.
+
+![contar](https://github.com/lazaroborghi/telegrambot_delto_lb/blob/main/quierocontar.png?raw=true)
 
 Charlar con Delto: 
 
