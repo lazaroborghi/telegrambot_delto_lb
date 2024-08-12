@@ -19,7 +19,7 @@ Esta funcionalidad es muy útil porque genera una nota de voz traducida al insta
 
 ### Probar DeltoBot
 
-Puedes probar a Delto haciendo click en el siguiente enlace: t.me/delto_lb_bot
+Puedes probar a Delto haciendo click en el siguiente enlace: [Probar DeltoBot](https://t.me/delto_bot_lb)
 
 ### Instalación de ambiente de desarrollo
 
