@@ -44,7 +44,7 @@ Puedes probar a Delto haciendo click en el siguiente enlace: [Probar DeltoBot](h
 
 ### Instalación de ambiente de desarrollo
 
-Para generar un ambiente de desarrollo en necesario:
+Para generar un ambiente de desarrollo es necesario:
 - Python (última versión estable).
 - Instalación de librerías (listadas en el archivo requirements.txt).
 - Credenciales de API (API de Telegram, OpenWeatherMap, OpenAI).
