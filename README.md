@@ -49,9 +49,9 @@ Para generar un ambiente de desarrollo es necesario:
 - Instalación de librerías (listadas en el archivo requirements.txt).
 - Credenciales de API (API de Telegram, OpenWeatherMap, OpenAI).
 - Documentación APIs:
-  - [Doc: Crear bot Telegram](https://core.telegram.org/bots)
-  - [Doc: API OpenWeatherMap](https://openweathermap.org/api/one-call-3)
-  - [Doc: API OpenAI](https://platform.openai.com/docs/overview)
+  - [Docs: Crear bot Telegram](https://core.telegram.org/bots)
+  - [Docs: API OpenWeatherMap](https://openweathermap.org/api/one-call-3)
+  - [Docs: API OpenAI](https://platform.openai.com/docs/overview)
 
 ### Configuración
 
