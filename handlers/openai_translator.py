@@ -88,7 +88,7 @@ async def handle_voice_message(client, message):
             return
 
         try:
-            transcription = await asyncio.to_thread(transcribe, file_path)
+            transcription = await transcribe(file_path)
         except Exception:
             await message.reply("Ocurrió un error al transcribir el archivo de voz. Por favor, inténtalo nuevamente.")
             return
@@ -97,7 +97,7 @@ async def handle_voice_message(client, message):
         await message.reply(f'Archivo de voz recibido. Intentando traducir "{transcription}" a {language_name}.')
 
         try:
-            translation = await asyncio.to_thread(translate, transcription, language_name)
+            translation = await translate(transcription, language_name)
         except Exception:
             await message.reply("Ocurrió un error al traducir el texto. Por favor, inténtalo nuevamente.")
             return
@@ -105,7 +105,7 @@ async def handle_voice_message(client, message):
         # Check doble por si el modelo se equivoca
         if "error" in translation and "false" in translation:
             try:
-                translation = await asyncio.to_thread(translate, transcription, language_name)
+                translation = await translate(transcription, language_name)
             except Exception:
                 await message.reply("Ocurrió un error al traducir el texto. Por favor, inténtalo nuevamente.")
                 return
@@ -119,7 +119,7 @@ async def handle_voice_message(client, message):
         await message.reply(translation)
 
         try:
-            audio_path = await asyncio.to_thread(generate_voice, translation)
+            audio_path = await generate_voice(translation)
             with open(audio_path, "rb") as audio_file:
                 await app.send_voice(user_id, audio_file)
         except Exception:

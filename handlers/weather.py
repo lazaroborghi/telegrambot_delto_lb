@@ -32,7 +32,7 @@ async def weather(client, message):
                 }
             ]
 
-            response = await asyncio.to_thread(generate_chat_completion, messages, "gpt-4o-mini", 0.1)
+            response = await generate_chat_completion(messages, "gpt-4o-mini", 0.1)
             city = response
 
         except Exception as e:
@@ -59,7 +59,7 @@ async def weather(client, message):
                         "content": f"Agrega información adicional sobre el clima al siguiente mensaje: ({weather_info}). Primero menciona el clima, la temperatura y un consejo de cómo pasar el día (por ejemplo si tiene que usar paraguas, si se tiene que abrigar o si simplemente tiene que disfrutar del día). Agrega un poco de información interesante sobre el lugar del cual se está consultando el clima. Sé breve."
                     }
                 ]
-                response = await asyncio.to_thread(generate_chat_completion, messages, "gpt-3.5-turbo")
+                response = await generate_chat_completion(messages, "gpt-3.5-turbo")
                 await message.reply(response)
             except Exception as e:
                 await message.reply("Ocurrió un error al procesar la información del clima. Por favor, inténtalo nuevamente.")
@@ -68,7 +68,7 @@ async def weather(client, message):
             try:
                 # Llamar a la API de OpenAI para generar una imagen de un paisaje del lugar usando asyncio.to_thread
                 prompt = f"Crea una fotografía con realismo de la ciudad: {city}. El propósito de la imagen es mostrar cómo se ve la ciudad de la cual se está hablando."
-                image_url = await asyncio.to_thread(generate_image, prompt)
+                image_url = await generate_image(prompt)
 
                 if image_url:
                     caption = f"Una imagen ilustrativa de {city}. (La imagen no representa la realidad, está generada con OpenAI)"

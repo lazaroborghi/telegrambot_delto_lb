@@ -74,7 +74,7 @@ async def handle_voice(client, message):
             return
 
         try:
-            transcription = await asyncio.to_thread(transcribe, file_path)
+            transcription = await transcribe(file_path)
         except Exception:
             await message.reply("Ocurrió un error al transcribir el archivo de voz. Por favor, inténtalo nuevamente.")
             return
@@ -95,7 +95,7 @@ async def handle_chat(user_id, text_message, message):
         get_user_chat(user_id).insert(0, system_message)
 
         try:
-            response = await asyncio.to_thread(generate_chat_completion, get_user_chat(user_id), "gpt-3.5-turbo")
+            response = await generate_chat_completion(get_user_chat(user_id), "gpt-3.5-turbo")
         except Exception:
             await message.reply("Ocurrió un error al generar la respuesta. Por favor, inténtalo nuevamente.")
             return
@@ -125,7 +125,7 @@ async def analyze_chat(chat_history):
             }
         ]
 
-        response = await asyncio.to_thread(generate_chat_completion, messages, "gpt-3.5-turbo")
+        response = await generate_chat_completion(messages, "gpt-3.5-turbo")
         return response
     
     except Exception:
