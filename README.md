@@ -2,7 +2,7 @@
 
 DeltoBot es un bot de Telegram diseñado para ofrecer una variedad de funcionalidades útiles y entretenidas.
 
-### Enlace para probarlo: [Probar DeltoBot](https://t.me/delto_lb_bot)
+### Enlace para probarlo: [Probar DeltoBot](https://t.me/delto_lb_bot) (UPD: Actualmente OFFLINE)
 
 ### Funcionalidades
 
@@ -40,7 +40,7 @@ Es muy útil porque genera una nota de voz traducida al instante de lo que le en
 
 ### Probar DeltoBot
 
-Puedes probar a Delto haciendo click en el siguiente enlace: [Probar DeltoBot](https://t.me/delto_lb_bot)
+Puedes probar a Delto haciendo click en el siguiente enlace: [Probar DeltoBot](https://t.me/delto_lb_bot) (UPD: Actualmente OFFLINE)
 
 ### Instalación de ambiente de desarrollo
 
